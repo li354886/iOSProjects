@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CEE4B398-51C2-41BF-817B-CFC9ECC90C41</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FavoriteActors</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5A0FB7416D76E836D92F370990FA9493D9C0D1EC</key>
+		<string>https://github.com/li354886/iOS-Projects.git</string>
+		<key>CD28FA6A2CFC634512324DD7C91B7993C5276BCE</key>
+		<string>https://github.com/udacity/ios-persistence</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoreDataFavoriteActors/FavoriteActors.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5A0FB7416D76E836D92F370990FA9493D9C0D1EC</key>
+		<string>../../..</string>
+		<key>CD28FA6A2CFC634512324DD7C91B7993C5276BCE</key>
+		<string>../../../../ios-persistence</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/li354886/iOS-Projects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5A0FB7416D76E836D92F370990FA9493D9C0D1EC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CD28FA6A2CFC634512324DD7C91B7993C5276BCE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-persistence</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A0FB7416D76E836D92F370990FA9493D9C0D1EC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Projects</string>
+		</dict>
+	</array>
+</dict>
+</plist>
