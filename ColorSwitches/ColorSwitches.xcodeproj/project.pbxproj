@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62CD61591B24A2B900CFAAAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD61581B24A2B900CFAAAD /* AppDelegate.swift */; };
+		62CD615B1B24A2B900CFAAAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD615A1B24A2B900CFAAAD /* ViewController.swift */; };
+		62CD615E1B24A2B900CFAAAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62CD615C1B24A2B900CFAAAD /* Main.storyboard */; };
+		62CD61601B24A2B900CFAAAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CD615F1B24A2B900CFAAAD /* Images.xcassets */; };
+		62CD61631B24A2B900CFAAAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CD61611B24A2B900CFAAAD /* LaunchScreen.xib */; };
+		62CD616F1B24A2B900CFAAAD /* ColorSwitchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD616E1B24A2B900CFAAAD /* ColorSwitchesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62CD61691B24A2B900CFAAAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62CD614B1B24A2B900CFAAAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CD61521B24A2B900CFAAAD;
+			remoteInfo = ColorSwitches;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62CD61531B24A2B900CFAAAD /* ColorSwitches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSwitches.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CD61571B24A2B900CFAAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CD61581B24A2B900CFAAAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62CD615A1B24A2B900CFAAAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62CD615D1B24A2B900CFAAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62CD615F1B24A2B900CFAAAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		62CD61621B24A2B900CFAAAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		62CD61681B24A2B900CFAAAD /* ColorSwitchesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorSwitchesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CD616D1B24A2B900CFAAAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62CD616E1B24A2B900CFAAAD /* ColorSwitchesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchesTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62CD61501B24A2B900CFAAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CD61651B24A2B900CFAAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62CD614A1B24A2B900CFAAAD = {
+			isa = PBXGroup;
+			children = (
+				62CD61551B24A2B900CFAAAD /* ColorSwitches */,
+				62CD616B1B24A2B900CFAAAD /* ColorSwitchesTests */,
+				62CD61541B24A2B900CFAAAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62CD61541B24A2B900CFAAAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62CD61531B24A2B900CFAAAD /* ColorSwitches.app */,
+				62CD61681B24A2B900CFAAAD /* ColorSwitchesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62CD61551B24A2B900CFAAAD /* ColorSwitches */ = {
+			isa = PBXGroup;
+			children = (
+				62CD61581B24A2B900CFAAAD /* AppDelegate.swift */,
+				62CD615A1B24A2B900CFAAAD /* ViewController.swift */,
+				62CD615C1B24A2B900CFAAAD /* Main.storyboard */,
+				62CD615F1B24A2B900CFAAAD /* Images.xcassets */,
+				62CD61611B24A2B900CFAAAD /* LaunchScreen.xib */,
+				62CD61561B24A2B900CFAAAD /* Supporting Files */,
+			);
+			path = ColorSwitches;
+			sourceTree = "<group>";
+		};
+		62CD61561B24A2B900CFAAAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62CD61571B24A2B900CFAAAD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62CD616B1B24A2B900CFAAAD /* ColorSwitchesTests */ = {
+			isa = PBXGroup;
+			children = (
+				62CD616E1B24A2B900CFAAAD /* ColorSwitchesTests.swift */,
+				62CD616C1B24A2B900CFAAAD /* Supporting Files */,
+			);
+			path = ColorSwitchesTests;
+			sourceTree = "<group>";
+		};
+		62CD616C1B24A2B900CFAAAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62CD616D1B24A2B900CFAAAD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62CD61521B24A2B900CFAAAD /* ColorSwitches */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CD61721B24A2B900CFAAAD /* Build configuration list for PBXNativeTarget "ColorSwitches" */;
+			buildPhases = (
+				62CD614F1B24A2B900CFAAAD /* Sources */,
+				62CD61501B24A2B900CFAAAD /* Frameworks */,
+				62CD61511B24A2B900CFAAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorSwitches;
+			productName = ColorSwitches;
+			productReference = 62CD61531B24A2B900CFAAAD /* ColorSwitches.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62CD61671B24A2B900CFAAAD /* ColorSwitchesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62CD61751B24A2B900CFAAAD /* Build configuration list for PBXNativeTarget "ColorSwitchesTests" */;
+			buildPhases = (
+				62CD61641B24A2B900CFAAAD /* Sources */,
+				62CD61651B24A2B900CFAAAD /* Frameworks */,
+				62CD61661B24A2B900CFAAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CD616A1B24A2B900CFAAAD /* PBXTargetDependency */,
+			);
+			name = ColorSwitchesTests;
+			productName = ColorSwitchesTests;
+			productReference = 62CD61681B24A2B900CFAAAD /* ColorSwitchesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62CD614B1B24A2B900CFAAAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Zhengning Li";
+				TargetAttributes = {
+					62CD61521B24A2B900CFAAAD = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					62CD61671B24A2B900CFAAAD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 62CD61521B24A2B900CFAAAD;
+					};
+				};
+			};
+			buildConfigurationList = 62CD614E1B24A2B900CFAAAD /* Build configuration list for PBXProject "ColorSwitches" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62CD614A1B24A2B900CFAAAD;
+			productRefGroup = 62CD61541B24A2B900CFAAAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62CD61521B24A2B900CFAAAD /* ColorSwitches */,
+				62CD61671B24A2B900CFAAAD /* ColorSwitchesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62CD61511B24A2B900CFAAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CD615E1B24A2B900CFAAAD /* Main.storyboard in Resources */,
+				62CD61631B24A2B900CFAAAD /* LaunchScreen.xib in Resources */,
+				62CD61601B24A2B900CFAAAD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CD61661B24A2B900CFAAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62CD614F1B24A2B900CFAAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CD615B1B24A2B900CFAAAD /* ViewController.swift in Sources */,
+				62CD61591B24A2B900CFAAAD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62CD61641B24A2B900CFAAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CD616F1B24A2B900CFAAAD /* ColorSwitchesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62CD616A1B24A2B900CFAAAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62CD61521B24A2B900CFAAAD /* ColorSwitches */;
+			targetProxy = 62CD61691B24A2B900CFAAAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62CD615C1B24A2B900CFAAAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62CD615D1B24A2B900CFAAAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		62CD61611B24A2B900CFAAAD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62CD61621B24A2B900CFAAAD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62CD61701B24A2B900CFAAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62CD61711B24A2B900CFAAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62CD61731B24A2B900CFAAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColorSwitches/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62CD61741B24A2B900CFAAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColorSwitches/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62CD61761B24A2B900CFAAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ColorSwitchesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorSwitches.app/ColorSwitches";
+			};
+			name = Debug;
+		};
+		62CD61771B24A2B900CFAAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ColorSwitchesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorSwitches.app/ColorSwitches";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62CD614E1B24A2B900CFAAAD /* Build configuration list for PBXProject "ColorSwitches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CD61701B24A2B900CFAAAD /* Debug */,
+				62CD61711B24A2B900CFAAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62CD61721B24A2B900CFAAAD /* Build configuration list for PBXNativeTarget "ColorSwitches" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CD61731B24A2B900CFAAAD /* Debug */,
+				62CD61741B24A2B900CFAAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62CD61751B24A2B900CFAAAD /* Build configuration list for PBXNativeTarget "ColorSwitchesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62CD61761B24A2B900CFAAAD /* Debug */,
+				62CD61771B24A2B900CFAAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62CD614B1B24A2B900CFAAAD /* Project object */;
+}
