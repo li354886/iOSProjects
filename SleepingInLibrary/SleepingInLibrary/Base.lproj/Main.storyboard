@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SleepingInLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LOX-eM-MOS">
+                                <rect key="frame" x="161" y="92" width="279" height="355"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtW-j4-SCS">
+                                <rect key="frame" x="211" y="540" width="178" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Grab New Image">
+                                    <color key="titleColor" red="1" green="0.34022602830289528" blue="0.038407804403308377" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchRefreshButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TkS-na-dKe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sleeping in the Library" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fx7-d0-Ad5">
+                                <rect key="frame" x="188" y="56" width="223.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.34022602829999998" blue="0.038407804400000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hab-cf-QYo">
+                                <rect key="frame" x="139" y="479" width="327" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.34022602829999998" blue="0.038407804400000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LOX-eM-MOS" firstAttribute="top" secondItem="Fx7-d0-Ad5" secondAttribute="bottom" constant="8" id="2T5-GD-Ain"/>
+                            <constraint firstItem="gtW-j4-SCS" firstAttribute="top" secondItem="LOX-eM-MOS" secondAttribute="bottom" constant="93" id="3da-ah-6hj"/>
+                            <constraint firstAttribute="centerY" secondItem="LOX-eM-MOS" secondAttribute="centerY" constant="29.5" id="BmI-En-0tm"/>
+                            <constraint firstAttribute="centerY" secondItem="gtW-j4-SCS" secondAttribute="centerY" constant="-265" id="Lqx-MD-X0l"/>
+                            <constraint firstItem="gtW-j4-SCS" firstAttribute="top" secondItem="hab-cf-QYo" secondAttribute="bottom" constant="8" id="PC4-Bb-HPq"/>
+                            <constraint firstAttribute="centerX" secondItem="gtW-j4-SCS" secondAttribute="centerX" id="TgO-qv-uzC"/>
+                            <constraint firstAttribute="centerY" secondItem="Fx7-d0-Ad5" secondAttribute="centerY" constant="229.5" id="VPW-DH-dPc"/>
+                            <constraint firstAttribute="centerX" secondItem="LOX-eM-MOS" secondAttribute="centerX" constant="-0.5" id="WKp-3l-typ"/>
+                            <constraint firstAttribute="centerX" secondItem="Fx7-d0-Ad5" secondAttribute="centerX" id="fgG-Bx-vZd"/>
+                            <constraint firstAttribute="centerX" secondItem="hab-cf-QYo" secondAttribute="centerX" constant="-2.5" id="o9F-Gs-txV"/>
+                            <constraint firstAttribute="centerY" secondItem="hab-cf-QYo" secondAttribute="centerY" constant="-205.5" id="qaQ-ic-Ao8"/>
+                            <constraint firstItem="hab-cf-QYo" firstAttribute="top" secondItem="LOX-eM-MOS" secondAttribute="bottom" constant="32" id="t9y-tG-e9o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="LOX-eM-MOS" id="8ve-P7-SGH"/>
+                        <outlet property="photoTitle" destination="hab-cf-QYo" id="fv5-1a-Ey7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
