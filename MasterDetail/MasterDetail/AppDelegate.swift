@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  FlickrImage
+//  MasterDetail
 //
-//  Created by 李正宁 on 6/8/15.
+//  Created by 李正宁 on 6/9/15.
 //  Copyright (c) 2015 Zhengning Li. All rights reserved.
 //
 
