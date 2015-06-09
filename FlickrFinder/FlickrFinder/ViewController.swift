@@ -100,24 +100,26 @@ class ViewController: UIViewController {
 
     }
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        tapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
+        tapRecognizer?.numberOfTapsRequired = 1
+    }
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         /* Add tap recognizer to dismiss keyboard */
         self.addKeyboardDismissRecognizer()
         
-        /* Subscribe to keyboard events so we can adjust the view to show hidden controls */
         self.subscribeToKeyboardNotifications()
     }
 
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        tapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
-        tapRecognizer?.numberOfTapsRequired = 1
-    }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
@@ -154,10 +156,13 @@ class ViewController: UIViewController {
         if self.photoImageView.image != nil {
             self.defaultLabel.alpha = 0.0
         }
+        println(1)
         self.view.frame.origin.y -= self.getKeyboardHeight(notification) / 2
     }
     
     func keyboardWillHide(notification: NSNotification) {
+        println(1
+        )
         if self.photoImageView.image == nil {
             self.defaultLabel.alpha = 1.0
         }
