@@ -17,15 +17,30 @@ class ViewController: UIViewController {
     
     @IBAction func appendDigit(sender: AnyObject) {
         let digit = sender.currentTitle!
-        if userIsInTheMiddleOfTypingANumber {
-            display.text = display.text! + digit!
+        if (digit == "Pi") {
+            var pi = M_PI
+            if userIsInTheMiddleOfTypingANumber {
+                display.text = display.text! + (NSString(format: "%.2f", pi) as String)
+            } else {
+                display.text = NSString(format: "%.2f", pi) as String
+                userIsInTheMiddleOfTypingANumber = true
+            }
         } else {
-            display.text = digit
-            userIsInTheMiddleOfTypingANumber = true
+            if userIsInTheMiddleOfTypingANumber {
+                display.text = display.text! + digit!
+            } else {
+                display.text = digit
+                userIsInTheMiddleOfTypingANumber = true
+            }
+
         }
     }
     
     var operandStack: Array<Double> = Array<Double>()
+    
+    @IBAction func digitOperation(sender: UIButton) {
+    
+    }
     
     @IBAction func operate(sender: UIButton) {
         let operation = sender.currentTitle!
@@ -33,11 +48,15 @@ class ViewController: UIViewController {
             enter()
         }
         switch operation{
-        case "⊠": performOperation { $0 * $1 }
-        case "⌹": performOperation { $1 / $0 }
+        case "+": performOperation { $0 * $1 }
+        case "÷": performOperation { $1 / $0 }
         case "+": performOperation { $0 + $1 }
         case "-": performOperation { $1 - $0 }
         case "√": performOperation { sqrt($0)}
+        case "·": performOperation { $1 + $0 / 10}
+        case "sin": performOperation { sin($0)}
+        case "cos": performOperation { cos($0)}
+        
         default: break
         }
     }
