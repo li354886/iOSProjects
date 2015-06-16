@@ -13,6 +13,7 @@
 		622AD4D51B2D161D00AED8A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 622AD4D41B2D161D00AED8A9 /* Images.xcassets */; };
 		622AD4D81B2D161D00AED8A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 622AD4D61B2D161D00AED8A9 /* LaunchScreen.xib */; };
 		622AD4E41B2D161D00AED8A9 /* CaculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AD4E31B2D161D00AED8A9 /* CaculatorTests.swift */; };
+		62EB106C1B2FA41500279B6E /* CaculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EB106B1B2FA41500279B6E /* CaculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		622AD4DD1B2D161D00AED8A9 /* CaculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		622AD4E21B2D161D00AED8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		622AD4E31B2D161D00AED8A9 /* CaculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaculatorTests.swift; sourceTree = "<group>"; };
+		62EB106B1B2FA41500279B6E /* CaculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				622AD4CD1B2D161D00AED8A9 /* AppDelegate.swift */,
 				622AD4CF1B2D161D00AED8A9 /* ViewController.swift */,
 				622AD4D11B2D161D00AED8A9 /* Main.storyboard */,
+				62EB106B1B2FA41500279B6E /* CaculatorBrain.swift */,
 				622AD4D41B2D161D00AED8A9 /* Images.xcassets */,
 				622AD4D61B2D161D00AED8A9 /* LaunchScreen.xib */,
 				622AD4CB1B2D161D00AED8A9 /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EB106C1B2FA41500279B6E /* CaculatorBrain.swift in Sources */,
 				622AD4D01B2D161D00AED8A9 /* ViewController.swift in Sources */,
 				622AD4CE1B2D161D00AED8A9 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				622AD4E91B2D161D00AED8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		622AD4EA1B2D161D00AED8A9 /* Build configuration list for PBXNativeTarget "CaculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				622AD4EC1B2D161D00AED8A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
