@@ -14,6 +14,19 @@ class CaculatorBrain
         case Operand(Double)
         case UnaryOperation(String, Double -> Double)
         case BinaryOperation(String, (Double, Double) -> Double)
+        
+        var description: String {
+            get {
+                switch self {
+                case .Operand(let operand):
+                    return "\(operand)"
+                case .UnaryOperation(let symbol, _):
+                    return symbol
+                case .BinaryOperation(let symbol, _):
+                    return symbol
+                }
+            }
+        }
     }
     
     private var opStack = [Op]()
@@ -26,6 +39,25 @@ class CaculatorBrain
         knowOps["÷"] = Op.BinaryOperation("÷") { $1 / $0}
         knowOps["-"] = Op.BinaryOperation("-") { $1 - $0}
         knowOps["√"] = Op.UnaryOperation("√") { sqrt($0)}
+    }
+    
+    var program: AnyObject {
+        get {
+            return opStack.map { $0.description }
+        }
+        set {
+            if let opSymbols = newValue as? Array<String> {
+                var newOpStack = [Op]()
+                for opSymbol in opSymbols {
+                    if let op = knowOps[opSymbol] {
+                        newOpStack.append(op)
+                    } else if let operand = NSNumberFormatter().numberFromString(opSymbol)?.doubleValue {
+                        newOpStack.append(.Operand(operand))
+                    }
+                }
+                opStack = newOpStack
+            }
+        }
     }
     
     private func evaluate(let ops: [Op]) -> (result: Double?, remainingOps: [Op])
@@ -59,12 +91,16 @@ class CaculatorBrain
         return result
     }
     
-    func pushOperand(operand: Double) {
+    func pushOperand(operand: Double) -> Double? {
         opStack.append(Op.Operand(operand))
+        return evaluate()
     }
     
-    func performOperation(operand: Double) {
-        
+    func performOperation(symbol: String) -> Double?{
+        if let operation = knowOps[symbol] {
+            opStack.append(operation)
+        }
+        return evaluate()
     }
     
 }
