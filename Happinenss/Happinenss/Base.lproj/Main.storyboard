@@ -29,6 +29,9 @@
                             <constraint firstItem="Beh-rg-jdf" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="oOK-b8-nAX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="Beh-rg-jdf" id="BDp-Om-WSR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

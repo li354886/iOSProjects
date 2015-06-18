@@ -14,6 +14,7 @@ class CaculatorBrain
         case Operand(Double)
         case UnaryOperation(String, Double -> Double)
         case BinaryOperation(String, (Double, Double) -> Double)
+        case setValueOperation(String, (String, Double) -> Double)
         
         var description: String {
             get {
@@ -23,6 +24,8 @@ class CaculatorBrain
                 case .UnaryOperation(let symbol, _):
                     return symbol
                 case .BinaryOperation(let symbol, _):
+                    return symbol
+                case .setValueOperation(let symbol, _):
                     return symbol
                 }
             }
@@ -39,6 +42,7 @@ class CaculatorBrain
         knowOps["÷"] = Op.BinaryOperation("÷") { $1 / $0}
         knowOps["-"] = Op.BinaryOperation("-") { $1 - $0}
         knowOps["√"] = Op.UnaryOperation("√") { sqrt($0)}
+        
     }
     
     var program: AnyObject {
@@ -101,6 +105,27 @@ class CaculatorBrain
             opStack.append(operation)
         }
         return evaluate()
+    }
+    
+    var operandSymbolStack = [String]()
+    
+    func pushOperand(symbol: String) -> Double? {
+        operandSymbolStack.append(symbol)
+        return evaluate()
+    }
+    
+    var variableDict = [String:Double]()
+    
+    var variableValues: [String:Double] {
+        get {
+            return variableDict
+        }
+        set {
+            if knowOps.remove{
+                var variableV = operandSymbolStack.removeLast()
+                variableDict["variableV"] =
+            }
+        }
     }
     
 }

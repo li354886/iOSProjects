@@ -8,14 +8,24 @@
 
 import UIKit
 
+
+protocol FaceViewDataSource: class{
+    func smilinessForFaceView(sender: FaceView) -> Double? 
+}
+
+@IBDesignable
 class FaceView: UIView {
 
     /*
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
         */
+    
+    @IBInspectable
     var lineWidth: CGFloat = 3 { didSet{ setNeedsDisplay() }}
+    @IBInspectable
     var color: UIColor = UIColor.blueColor() { didSet { setNeedsDisplay() }}
+    @IBInspectable
     var scale: CGFloat = 0.90 { didSet { setNeedsDisplay()} }
     
     var faceCenter: CGPoint {
@@ -25,6 +35,10 @@ class FaceView: UIView {
     var faceRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * 0.90
     }
+    
+    weak var dataSource: FaceViewDataSource?
+    
+    
     
     private enum Eye {
         case Left, Right
@@ -88,7 +102,7 @@ class FaceView: UIView {
         bezierPathForEye(.Left).stroke()
         bezierPathForEye(.Right).stroke()
         
-        let smiliness = -0.75
+        let smiliness = dataSource?.smilinessForFaceView(self) ?? 0.0
         let smilePath = bezierPathForSmile(smiliness)
         smilePath.stroke()
         

@@ -89,14 +89,14 @@ class ViewController: UIViewController {
     
     @IBAction func enter() {
         userIsInTheMiddleOfTypingANumber = false
-        if let result = brain.pushOperand(displayValue) {
+        if let result = brain.pushOperand(displayValue!) {
             displayValue = result
         } else {
             displayValue = 0
         }
     }
     
-    var displayValue: Double {
+    var displayValue: Double? {
         get {
             return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
         }
