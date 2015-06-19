@@ -19,6 +19,10 @@
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-rg-jdf" customClass="FaceView" customModule="Happinenss" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1yU-uZ-QNa" appends="YES" id="31N-Ut-QWe"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -34,6 +38,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="1yU-uZ-QNa">
+                    <connections>
+                        <action selector="changeHappiness:" destination="vXZ-lx-hvc" id="P9i-MS-vUU"/>
+                        <outlet property="delegate" destination="Beh-rg-jdf" id="n90-rE-uV4"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
