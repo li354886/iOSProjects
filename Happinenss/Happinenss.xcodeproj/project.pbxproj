@@ -81,8 +81,8 @@
 		62EB10781B3113D900279B6E /* Happinenss */ = {
 			isa = PBXGroup;
 			children = (
-				62EB109D1B31162100279B6E /* HappinessViewController.swift */,
 				62EB107F1B3113D900279B6E /* Main.storyboard */,
+				62EB109D1B31162100279B6E /* HappinessViewController.swift */,
 				62EB10A01B3116E900279B6E /* FaceView.swift */,
 				62EB10841B3113D900279B6E /* LaunchScreen.xib */,
 				62EB10791B3113D900279B6E /* Supporting Files */,
@@ -417,6 +417,7 @@
 				62EB10971B3113D900279B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62EB10981B3113D900279B6E /* Build configuration list for PBXNativeTarget "HappinenssTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				62EB109A1B3113D900279B6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

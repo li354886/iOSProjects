@@ -45,6 +45,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="565" y="454"/>
         </scene>
     </scenes>
 </document>
