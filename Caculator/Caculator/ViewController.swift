@@ -41,10 +41,11 @@ class ViewController: UIViewController {
         }
     }
     
+    
     var operandStack: Array<Double> = Array<Double>()
     
     @IBAction func digitOperation(sender: UIButton) {
-    
+        println(1)
     }
     
     @IBAction func operate(sender: UIButton) {
