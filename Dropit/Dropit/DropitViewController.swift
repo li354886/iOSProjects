@@ -29,6 +29,28 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate
     
     let dropitBehavior = DropitBehavior()
     
+    var attachment: UIAttachmentBehavior? {
+        willSet{
+            animator.removeBehavior(attachment)
+            
+            gameView.setPath(nil, named: PathNames.Attachment)
+        }
+        didSet{
+            if attachment != nil{
+                animator.addBehavior(attachment)
+                attachment?.action = { [unowned self] in
+                    if let attachmentView = self.attachment?.items.first as? UIView {
+                        let path = UIBezierPath()
+                        path.moveToPoint(self.attachment!.anchorPoint)
+                        path.addLineToPoint(attachmentView.center)
+                        println(1)
+                        self.gameView.setPath(path, named: PathNames.Attachment)
+                    }
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         animator.addBehavior(dropitBehavior)
@@ -37,6 +59,7 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate
     
     struct PathNames {
         static let MiddleBarrier = "Middler Barrier"
+        static let Attachment = "Attachment"
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,7 +68,7 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate
         let barrierOrigin = CGPoint(x: gameView.bounds.midX-barrierSize.width/2, y: gameView.bounds.midY-barrierSize.height/2)
         let path = UIBezierPath(ovalInRect: CGRect(origin: barrierOrigin, size: barrierSize))
         dropitBehavior.addBarrier(path, named: PathNames.MiddleBarrier)
-        gameView.setPath(path, named: PathNames.MiddleBarrier)
+        gameView.setPath(path, named: PathNames.MiddleBarrier )
     }
     
     func dynamicAnimatorDidPause(animator: UIDynamicAnimator) {
@@ -64,13 +87,34 @@ class DropitViewController: UIViewController, UIDynamicAnimatorDelegate
         drop()
     }
     
+    @IBAction func grabDrop(sender: UIPanGestureRecognizer) {
+        let gesturePoint = sender.locationInView(gameView)
+        
+        switch sender.state {
+        case .Began:
+            print(lastDroppedView)
+            if let viewToAttachTo = lastDroppedView {
+                println(attachment)
+                attachment = UIAttachmentBehavior(item: viewToAttachTo, attachedToAnchor: gesturePoint)
+                lastDroppedView = nil
+            }
+        case .Changed:
+            attachment?.anchorPoint = gesturePoint
+        case .Ended:
+            attachment = nil
+        default: break
+        }
+    }
+    
+    var lastDroppedView: UIView?
+    
     func drop() {
         var frame = CGRect(origin: CGPointZero, size: dropSize)
         frame.origin.x = CGFloat.random(dropsPerRow) * dropSize.width
         
         let dropView = UIView(frame: frame)
         dropView.backgroundColor = UIColor.random
-        
+        lastDroppedView = dropView
         dropitBehavior.addDrop(dropView)
     }
     

@@ -46,7 +46,7 @@
                 </tapGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zTE-7S-QbU">
                     <connections>
-                        <action selector="grabDrop:" destination="BYZ-38-t0r" id="K2e-2C-fxW"/>
+                        <action selector="grabDrop:" destination="BYZ-38-t0r" id="Pb7-fx-hVj"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
