@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>501EBD63-32B8-442D-AF3D-DCFC678780CC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>PaperSciStone</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>73EACB340C31BF40098ECA86B0D28025245900D6</key>
 		<string>https://github.com/li354886/iOSProjects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PaperSciStone/PaperSciStone.xcodeproj/project.xcworkspace</string>
+	<string>PaperSciStone/PaperSciStone.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>73EACB340C31BF40098ECA86B0D28025245900D6</key>

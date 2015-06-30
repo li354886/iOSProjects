@@ -24,8 +24,8 @@ private var twitterAccount: ACAccount?
 
 public class TwitterRequest
 {
-    public var requestType: String
-    public var parameters = Dictionary<String, String>()
+    public let requestType: String
+    public let parameters: [String:String]
     
     // designated initializer
     public init(_ requestType: String, _ parameters: Dictionary<String, String> = [:]) {
@@ -165,7 +165,6 @@ public class TwitterRequest
                         twitterAccount = account
                         self.performTwitterRequest(request, handler: handler)
                     } else {
-                       
                         let error = "Couldn't discover Twitter account type."
                         self.log(error)
                         handler(error)

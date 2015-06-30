@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Smashtag
+//  SmashTag
 //
-//  Created by 李正宁 on 6/26/15.
+//  Created by 李正宁 on 6/29/15.
 //  Copyright (c) 2015 Zhengning Li. All rights reserved.
 //
 

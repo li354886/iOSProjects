@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62DAF0D21B3E4AD7008D835E"
-               BuildableName = "Smashtag.app"
-               BlueprintName = "Smashtag"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BlueprintIdentifier = "6240F3B71B420C83009185D3"
+               BuildableName = "SmashTag.app"
+               BlueprintName = "SmashTag"
+               ReferencedContainer = "container:SmashTag.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62DAF0E71B3E4AD7008D835E"
-               BuildableName = "SmashtagTests.xctest"
-               BlueprintName = "SmashtagTests"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BlueprintIdentifier = "6240F3CC1B420C83009185D3"
+               BuildableName = "SmashTagTests.xctest"
+               BlueprintName = "SmashTagTests"
+               ReferencedContainer = "container:SmashTag.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "62DAF0E71B3E4AD7008D835E"
-               BuildableName = "SmashtagTests.xctest"
-               BlueprintName = "SmashtagTests"
-               ReferencedContainer = "container:Smashtag.xcodeproj">
+               BlueprintIdentifier = "6240F3CC1B420C83009185D3"
+               BuildableName = "SmashTagTests.xctest"
+               BlueprintName = "SmashTagTests"
+               ReferencedContainer = "container:SmashTag.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62DAF0D21B3E4AD7008D835E"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BlueprintIdentifier = "6240F3B71B420C83009185D3"
+            BuildableName = "SmashTag.app"
+            BlueprintName = "SmashTag"
+            ReferencedContainer = "container:SmashTag.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62DAF0D21B3E4AD7008D835E"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BlueprintIdentifier = "6240F3B71B420C83009185D3"
+            BuildableName = "SmashTag.app"
+            BlueprintName = "SmashTag"
+            ReferencedContainer = "container:SmashTag.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "62DAF0D21B3E4AD7008D835E"
-            BuildableName = "Smashtag.app"
-            BlueprintName = "Smashtag"
-            ReferencedContainer = "container:Smashtag.xcodeproj">
+            BlueprintIdentifier = "6240F3B71B420C83009185D3"
+            BuildableName = "SmashTag.app"
+            BlueprintName = "SmashTag"
+            ReferencedContainer = "container:SmashTag.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
