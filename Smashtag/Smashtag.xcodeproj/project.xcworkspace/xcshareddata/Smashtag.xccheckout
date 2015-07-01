@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6FF71883-A222-41CC-9AF4-3D0AD9F725BF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SmashTag</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>73EACB340C31BF40098ECA86B0D28025245900D6</key>
 		<string>https://github.com/li354886/iOSProjects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SmashTag/SmashTag.xcodeproj/project.xcworkspace</string>
+	<string>SmashTag/SmashTag.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>73EACB340C31BF40098ECA86B0D28025245900D6</key>
