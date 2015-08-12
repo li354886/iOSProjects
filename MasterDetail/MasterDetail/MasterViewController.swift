@@ -31,6 +31,9 @@ class MasterViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
         self.navigationItem.rightBarButtonItem = addButton
         
+//        if let array = NSKeyedUnarchiver.unarchiveObjectWithData(filePath) as? [AnyObject] {
+//            objects = array
+//        }
         if let array = NSKeyedUnarchiver.unarchiveObjectWithData(filePath) as? [AnyObject] {
             objects = array
         }
