@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>560596E3-1A12-4EBF-96CC-0D8E48986C38</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Trax</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>73EACB340C31BF40098ECA86B0D28025245900D6</key>
 		<string>https://github.com/li354886/iOSProjects.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Trax/Trax.xcodeproj/project.xcworkspace</string>
+	<string>Trax/Trax.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>73EACB340C31BF40098ECA86B0D28025245900D6</key>
