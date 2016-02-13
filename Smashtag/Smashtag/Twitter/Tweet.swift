@@ -14,7 +14,7 @@ import Foundation
 // note carefully the comments on the two range properties in an IndexedKeyword
 // Tweet instances re created by fetching from Twitter using a TwitterRequest
 
-public class Tweet : Printable
+public class Tweet : CustomStringConvertible
 {
     public let text: String!
     public let user: User!
@@ -25,7 +25,7 @@ public class Tweet : Printable
     public let urls: [IndexedKeyword]
     public let userMentions: [IndexedKeyword]
 
-    public struct IndexedKeyword: Printable
+    public struct IndexedKeyword: CustomStringConvertible
     {
         public let keyword: String              // will include # or @ or http:// prefix
         public let range: Range<String.Index>   // index into the Tweet's text property only
@@ -136,7 +136,7 @@ private extension NSString {
         var end = max(min(nearRange.location + nearRange.length, length), 0)
         var done = false
         while !done {
-            let range = self.rangeOfString(substring as String, options: NSStringCompareOptions.allZeros, range: NSMakeRange(start, end-start))
+            let range = self.rangeOfString(substring as String, options: NSStringCompareOptions(), range: NSMakeRange(start, end-start))
             if range.location != NSNotFound {
                 return range
             }

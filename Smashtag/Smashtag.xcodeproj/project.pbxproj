@@ -179,6 +179,7 @@
 		6240F3B01B420C83009185D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Zhengning Li";
 				TargetAttributes = {
@@ -439,6 +440,7 @@
 				6240F3D91B420C83009185D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6240F3DA1B420C83009185D3 /* Build configuration list for PBXNativeTarget "SmashTagTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +449,7 @@
 				6240F3DC1B420C83009185D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
