@@ -183,7 +183,7 @@ public class TwitterRequest
     
     // modifies parameters in an existing request to create a new one
     
-    private func modifiedRequest(#parametersToChange: Dictionary<String,String>, clearCount: Bool = false) -> TwitterRequest {
+    private func modifiedRequest(parametersToChange parametersToChange: Dictionary<String,String>, clearCount: Bool = false) -> TwitterRequest {
         var newParameters = parameters
         for (key, value) in parametersToChange {
             newParameters[key] = value
@@ -214,7 +214,7 @@ public class TwitterRequest
     // debug println with identifying prefix
     
     private func log(whatToLog: AnyObject) {
-        debugPrintln("TwitterRequest: \(whatToLog)")
+        debugPrint("TwitterRequest: \(whatToLog)")
     }
     
     // synchronizes access to self across multiple threads

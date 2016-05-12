@@ -10,7 +10,7 @@ import Foundation
 
 // container to hold data about a Twitter user
 
-public struct User: Printable
+public struct User: CustomStringConvertible
 {
     public let screenName: String
     public let name: String

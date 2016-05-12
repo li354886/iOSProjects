@@ -18,6 +18,7 @@
 		6240F3E61B420D27009185D3 /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240F3E21B420D27009185D3 /* TwitterRequest.swift */; };
 		6240F3E71B420D27009185D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240F3E31B420D27009185D3 /* User.swift */; };
 		6240F3E91B42114F009185D3 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240F3E81B42114F009185D3 /* TweetTableViewCell.swift */; };
+		62B2A8451C6FDDB5000D49C5 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6240F3E11B420D27009185D3 /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -251,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6240F3D41B420C83009185D3 /* SmashTagTests.swift in Sources */,
+				62B2A8451C6FDDB5000D49C5 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
